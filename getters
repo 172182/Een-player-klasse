@@ -1,0 +1,62 @@
+public class Player {
+    private string name;
+    private int money;
+    private int score;
+
+    public Player() {
+        
+    }
+
+
+    public string getName() {
+        return name;
+    }
+    public int getMoney() {
+        return money;
+    }
+    public int getScore() {
+        return score;
+    }
+    public void setName(string playerName) {
+        name = playerName;
+    }
+
+    public void setMoney(int playerMoney) {
+        money = playerMoney;
+    }
+    public void setScore(int playerScore) {
+        money = playerScore;
+    }
+}
+
+
+
+
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Player p = new Player();
+            p.setMoney(100);
+            p.setName("Piet"); 
+            p.setScore(76);
+            Console.WriteLine(p.getName ());
+            Console.WriteLine(p.getMoney());
+            Console.WriteLine(p.getScore());
+
+            Player p2 = new Player();
+            p2.setMoney(100);
+            p2.setName("Truus");
+            p2.setScore(76);
+            Console.WriteLine(p2.getName()); 
+            Console.WriteLine(p2.getMoney()); 
+            Console.WriteLine(p2.getScore());     
+
+            Console.WriteLine(p.getName() + " speelt tegen " + p2.getName() );
+       
+        }
+
+    }
+
+    
